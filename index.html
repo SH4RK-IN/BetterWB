@@ -8,43 +8,54 @@
 </head>
 <body>
   <div class="container">
-    <div class="board-selector">
-      <button class="board-back-option"></button>
-      <input type="number" id="board-selected-number" value="1">
-      <span>OF</span>
-      <input type="number" id="board-total-number" value="1" readonly>
-      <button class="board-front-option"></button>
+    <div class="top-bar">
+
+      <div class="board-selector">
+        <button class="board-back-option"><</button>
+        <input type="number" id="board-selected-number" value="1">
+        <span>OF</span>
+        <input type="number" id="board-total-number" value="1" readonly>
+        <button class="board-front-option">></button>
+      </div>
+
+      <button class="screen-toggle">
+        <img src="" alt="full-screen-img" class="full-screen"> <!--img to be added-->
+        <img src="" alt="exit-full-screen-img" class="exit-full-screen"> <!--img to be added-->
+      </button>
     </div>
 
-    <button class="screen-toggle">
-      <img src="" alt="full-screen-img" class="full-screen"> <!--img to be added-->
-      <img src="" alt="exit-full-screen-img" class="exit-full-screen"> <!--img to be added-->
-    </button>
 
     <div class="tool-bar bar">
       <div class="tool-options">
-        <button class="pen-menu">
-          <div id="pen-menu-items bar">
-            <button class="tools" id="pen"><img src="" alt="pen-img"></button> <!--img to be added-->
-            <button class="tools" id="highlighter"><img src="" alt="highlighter-img"></button> <!--img to be added-->
-            <button class="tools" id="eraser"><img src="" alt="eraser-img"></button> <!--img to be added-->
-            <button class="tools" id="eraser-line"><img src="" alt="eraser-line-img"></button> <!--img to be added-->
-          </div>
-        </button>   
+        <button class="pen-menu">Pen</button>   
+        <div id="pen-menu-items bar">
+          <button class="tools" id="pen"><img src="" alt="pen-img"></button> <!--img to be added-->
+          <button class="tools" id="highlighter"><img src="" alt="highlighter-img"></button> <!--img to be added-->
+          <button class="tools" id="eraser"><img src="" alt="eraser-img"></button> <!--img to be added-->
+          <button class="tools" id="eraser-line"><img src="" alt="eraser-line-img"></button> <!--img to be added-->
+        </div>
         
-        <button class="shape-menu">
-          <div id="shape-menu-items bar">
-            <button class="tools" id="straight-line"><img src="" alt="straight-line-img"></button> <!--img to be added-->
-            <button class="tools" id="sqauare"><img src="" alt="sqauare-img"></button> <!--img to be added-->
-            <button class="tools" id="triangle"><img src="" alt="triangle-img"></button> <!--img to be added-->
-            <button class="tools" id="circle"><img src="" alt="circle-img"></button> <!--img to be added-->
-            <!-- <button class="tools" id="more-shapes">
-              <div>
+        <button class="shape-menu">Shape</button>
+        <div id="shape-menu-items bar">
+          <button class="tools" id="straight-line"><img src="" alt="straight-line-img"></button> <!--img to be added-->
+          <button class="tools" id="sqauare"><img src="" alt="sqauare-img"></button> <!--img to be added-->
+          <button class="tools" id="triangle"><img src="" alt="triangle-img"></button> <!--img to be added-->
+          <button class="tools" id="circle"><img src="" alt="circle-img"></button> <!--img to be added-->
+          <!-- <button class="tools" id="more-shapes">
+            <div>
 
-              </div>
-            </button> -->
-          </div>
-        </button>
+            </div>
+          </button> -->
+        </div>
+
+        <button class="color-menu">Color</button>
+        <div id="color-menu-items bar">
+          <button class="color-option" id="black" style="background-color: black;"></button>
+          <button class="color-option" id="red" style="background-color: red;"></button>
+          <button class="color-option" id="blue" style="background-color: blue;"></button>
+          <button class="color-option" id="green" style="background-color: green;"></button>
+          <input type="color" id="custom-color-picker">
+        </div>
 
         <button class="text"><img src="" alt="text-img"></button>
         <br>
