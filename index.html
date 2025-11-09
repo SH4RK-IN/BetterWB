@@ -9,7 +9,8 @@
 <body>
   <div class="container">
     <div class="top-bar">
-
+      <div></div>
+      
       <div class="board-selector">
         <button class="board-back-option"><</button>
         <input type="number" id="board-selected-number" value="1">
@@ -27,16 +28,16 @@
 
     <div class="tool-bar bar">
       <div class="tool-options">
-        <button class="pen-menu">Pen</button>   
-        <div id="pen-menu-items bar">
+        <button class="pen-menu tools-main"><img src="" alt="pen-img"></button>   
+        <div id="pen-menu-items" class="bar sub-bar">
           <button class="tools" id="pen"><img src="" alt="pen-img"></button> <!--img to be added-->
           <button class="tools" id="highlighter"><img src="" alt="highlighter-img"></button> <!--img to be added-->
           <button class="tools" id="eraser"><img src="" alt="eraser-img"></button> <!--img to be added-->
           <button class="tools" id="eraser-line"><img src="" alt="eraser-line-img"></button> <!--img to be added-->
         </div>
-        
-        <button class="shape-menu">Shape</button>
-        <div id="shape-menu-items bar">
+
+        <button class="shape-menu tools-main"><img src="" alt="shape-img"></button>
+        <div id="shape-menu-items" class="bar sub-bar">
           <button class="tools" id="straight-line"><img src="" alt="straight-line-img"></button> <!--img to be added-->
           <button class="tools" id="sqauare"><img src="" alt="sqauare-img"></button> <!--img to be added-->
           <button class="tools" id="triangle"><img src="" alt="triangle-img"></button> <!--img to be added-->
@@ -48,33 +49,32 @@
           </button> -->
         </div>
 
-        <button class="color-menu">Color</button>
-        <div id="color-menu-items bar">
-          <button class="color-option" id="black" style="background-color: black;"></button>
-          <button class="color-option" id="red" style="background-color: red;"></button>
-          <button class="color-option" id="blue" style="background-color: blue;"></button>
-          <button class="color-option" id="green" style="background-color: green;"></button>
+        <button class="color-menu tools-main"><img src="" alt="color-img"></button>
+        <div id="color-menu-items" class="bar sub-bar">
+          <button class="tools" id="black" style="background-color: black;"></button>
+          <button class="tools" id="red" style="background-color: red;"></button>
+          <button class="tools" id="blue" style="background-color: blue;"></button>
+          <button class="tools" id="green" style="background-color: green;"></button>
           <input type="color" id="custom-color-picker">
         </div>
 
-        <button class="text"><img src="" alt="text-img"></button>
-        <br>
+        <button class="text tools-main"><img src="" alt="text-img"></button>
 
-        <button class="image-import"><img src="" alt="image-import-img"></button>
-        <div class="image-import-popup popup">
+        <button class="image-import tools-main"><img src="" alt="image-import-img"></button>
+        <div id="image-menu-items" class="bar sub-bar2">
             <span>Import Image</span>
             <div id="image-import-animation"></div>
-            <input type="file" accept="image/*">
+            <input type="file" id="fileInput">
+            <label for="fileInput">Choose Image</label>
           </div>
 
         <!-- <button class="gif">
 
         </button> --> 
       </div>
-
       <div class="action-history">
-        <button id="undo"><img src="" alt="undo"></button>
-        <button id="redo"><img src="" alt="redo"></button>
+        <button class="action-tools" id="undo"><img src="" alt="undo"></button>
+        <button class="action-tools" id="redo"><img src="" alt="redo"></button>
       </div>
     </div>
 
